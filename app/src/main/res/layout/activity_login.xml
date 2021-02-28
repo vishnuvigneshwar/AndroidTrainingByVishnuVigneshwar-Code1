@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    tools:deviceIds="wear">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/loginimg1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/imagelogo"
+            />
+
+        <TextView
+            android:id="@+id/lognilabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login User Id"
+            android:layout_below="@+id/imagelogo"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
+
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_below="@+id/lognilabel"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:hint="Enter Email Id"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:nextFocusDown="@+id/password"
+            />
+
+
+        <TextView
+            android:id="@+id/passwordlabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Password"
+            android:layout_below="@+id/email_id"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
+
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_below="@+id/passwordlabel"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:lines="1"
+            />
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:text="Login"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+
+            />
+    </RelativeLayout>
+</LinearLayout>
